@@ -55,3 +55,36 @@ void dfs2()
 	}
 
 }
+
+int p[10];
+int depth[10]; //트리의 뎁스 계산 
+void treedfs(int root) //트리에서 bfs
+{
+  stack<int> s;
+  s.push(root);
+  while(!s.empty())
+  {
+			int cur=s.top();
+			s.pop();
+			cout<<cur<<"->";
+			for(auto nxt:adj[cur])
+			{
+					if(p[cur]==nxt)continue; //연결된 노드가 부모노드인 경우 스킵
+					s.push(nxt);
+					p[nxt]=cur; //부모노드 기록하기
+					depth[nxt]=depth[cur]+1;
+			}	
+  }
+}
+void treedfsrecur(int cur)
+{
+		cout<<cur<<"->";
+		for(auto nxt:adj[cur])
+		{
+				if(p[cur]==nxt)continue;
+				p[nxt]=cur;
+				depth[nxt]=depth[cur]+1;
+				treedfsrecur(nxt);
+		}
+
+}
