@@ -1,123 +1,123 @@
-//#include<iostream>
-//#include<string>
-//#include<unordered_set>
-//
-//using namespace std;
-//
-////1À¯ÇÑÇÑ ¹üÀ§ÀÇ ÁýÇÕÀ» Ç¥ÇöÇÏ±â À§ÇØ ÀÎµ¦½º¸¦ °ªÀ¸·Î Ãë±ÞÇÏ´Â ¹è¿­ ¸¸µë 
-//int main()
-//{
-//	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-//	int arr[21] = { 0 };
-//	int m;
-//	cin >> m;
-//	for (int i = 0; i < m; i++)
-//	{
-//		string s1;
-//		int s2;
-//		cin >> s1;
-//		if (s1 == "add")
-//		{
-//			cin >> s2;
-//			arr[s2] = 1;
-//		}
-//		else if (s1 == "remove")
-//		{
-//			cin >> s2;
-//			if (arr[s2] == 1)
-//				arr[s2] = 0;
-//		}
-//		else if (s1 == "check")
-//		{
-//			cin >> s2;
-//			if (arr[s2]==1) //Á¸ÀçÇÏ´Â°æ¿ì 
-//				cout << 1 << '\n';
-//			else
-//				cout << 0 << '\n';
-//		}
-//		else if (s1 == "toggle")
-//		{
-//			cin >> s2;
-//			if (arr[s2] == 1) //ÀÖ´Â°æ¿ì 
-//				arr[s2] = 0;
-//			else
-//				arr[s2] = 1;
-//		}
-//		else if (s1 == "all")
-//		{
-//			for (int i = 1; i <= 20; i++)
-//				arr[i] = 1;
-//		}
-//		else if (s1 == "empty")
-//		{
-//			for (int i = 1; i <= 20; i++)
-//				arr[i] = 0;
-//		}
-//
-//
-//	}
-//
-//
-//
-//}
-//
-////2ºñÆ®¸¶½ºÅ©¸¦ ÅëÇØ ÁýÇÕÀ» ºü¸£°Ô ¿¬»êÇÑ´Ù 
-//#include <iostream>
-//#include <string>
-//
-//using namespace std;
-//
-//int main()
-//{
-//    ios_base::sync_with_stdio(false);
-//    cin.tie(NULL);
-//    cout.tie(NULL);
-//
-//    int m;
-//    cin >> m;
-//
-//    string order;
-//    int val, BIT = 0; // BIT¸¦ ¹Ýµå½Ã 0À¸·Î ÃÊ±âÈ­ ÇØÁØ´Ù.
-//    while (m--)
-//    {
-//        cin >> order;
-//        if (order == "add")
-//        {
-//            cin >> val;
-//            // or ¿¬»êÀÚ¸¦ ÅëÇØ val¹øÂ° ÀÚ¸®¼ö¸¦ 1·Î Ã¤¿î´Ù.
-//            BIT |= (1 << val);
-//        }
-//        else if (order == "remove")
-//        {
-//            cin >> val;
-//            // ex) 1000 & ~(1000) = 0000
-//            BIT &= ~(1 << val); //°ª°ú ´ëÀÀµÇ´Â ºñÆ®¸¦ ¾ø¾Ú 
-//        }
-//        else if (order == "check")
-//        {
-//            cin >> val;
-//            if (BIT & (1 << val)) //°ª°ú ´ëÀÀ´Â ºñÆ®Ã£±â 
-//                cout << 1 << '\n';
-//            else
-//                cout << 0 << '\n';
-//        }
-//        else if (order == "toggle")
-//        {
-//            cin >> val;
-//            // BITÀÇ val¹øÂ° ÀÚ¸®°¡ 1ÀÌ¶ó¸é 1^1=0ÀÌ µÇ¾î 1->0ÀÌ µÇ°í
-//            // val¹øÂ° ÀÚ¸®°¡ 0ÀÌ¶ó¸é 0^1=1 ÀÌ µÇ¾î 0 -> 1ÀÌ µÈ´Ù.
-//            BIT ^= (1 << val);
-//        }
-//        else if (order == "all")
-//        {
-//            // ex) 10000 - 1 = 1111
-//            BIT = (1 << 21) - 1;
-//        }
-//        else if (order == "empty")
-//        {
-//            BIT = 0;
-//        }
-//    }
-//
-//    return 0;
-//}
+#include<iostream>
+#include<string>
+#include<unordered_set>
+
+using namespace std;
+
+//1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½è¿­ ï¿½ï¿½ï¿½ï¿½ 
+int main()
+{
+	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+	int arr[21] = { 0 };
+	int m;
+	cin >> m;
+	for (int i = 0; i < m; i++)
+	{
+		string s1;
+		int s2;
+		cin >> s1;
+		if (s1 == "add")
+		{
+			cin >> s2;
+			arr[s2] = 1;
+		}
+		else if (s1 == "remove")
+		{
+			cin >> s2;
+			if (arr[s2] == 1)
+				arr[s2] = 0;
+		}
+		else if (s1 == "check")
+		{
+			cin >> s2;
+			if (arr[s2]==1) //ï¿½ï¿½ï¿½ï¿½ï¿½Ï´Â°ï¿½ï¿½ 
+				cout << 1 << '\n';
+			else
+				cout << 0 << '\n';
+		}
+		else if (s1 == "toggle")
+		{
+			cin >> s2;
+			if (arr[s2] == 1) //ï¿½Ö´Â°ï¿½ï¿½ 
+				arr[s2] = 0;
+			else
+				arr[s2] = 1;
+		}
+		else if (s1 == "all")
+		{
+			for (int i = 1; i <= 20; i++)
+				arr[i] = 1;
+		}
+		else if (s1 == "empty")
+		{
+			for (int i = 1; i <= 20; i++)
+				arr[i] = 0;
+		}
+
+
+	}
+
+
+
+}
+
+//2ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Å©ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½ 
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+   ios_base::sync_with_stdio(false);
+   cin.tie(NULL);
+   cout.tie(NULL);
+
+   int m;
+   cin >> m;
+
+   string order;
+   int val, BIT = 0; // BITï¿½ï¿½ ï¿½Ýµï¿½ï¿½ 0ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½ï¿½ï¿½Ø´ï¿½.
+   while (m--)
+   {
+       cin >> order;
+       if (order == "add")
+       {
+           cin >> val;
+           // or ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ valï¿½ï¿½Â° ï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½ Ã¤ï¿½ï¿½ï¿½.
+           BIT |= (1 << val);
+       }
+       else if (order == "remove")
+       {
+           cin >> val;
+           // ex) 1000 & ~(1000) = 0000
+           BIT &= ~(1 << val); //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç´ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
+       }
+       else if (order == "check")
+       {
+           cin >> val;
+           if (BIT & (1 << val)) //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®Ã£ï¿½ï¿½ 
+               cout << 1 << '\n';
+           else
+               cout << 0 << '\n';
+       }
+       else if (order == "toggle")
+       {
+           cin >> val;
+           // BITï¿½ï¿½ valï¿½ï¿½Â° ï¿½Ú¸ï¿½ï¿½ï¿½ 1ï¿½Ì¶ï¿½ï¿½ 1^1=0ï¿½ï¿½ ï¿½Ç¾ï¿½ 1->0ï¿½ï¿½ ï¿½Ç°ï¿½
+           // valï¿½ï¿½Â° ï¿½Ú¸ï¿½ï¿½ï¿½ 0ï¿½Ì¶ï¿½ï¿½ 0^1=1 ï¿½ï¿½ ï¿½Ç¾ï¿½ 0 -> 1ï¿½ï¿½ ï¿½È´ï¿½.
+           BIT ^= (1 << val);
+       }
+       else if (order == "all")
+       {
+           // ex) 10000 - 1 = 1111
+           BIT = (1 << 21) - 1;
+       }
+       else if (order == "empty")
+       {
+           BIT = 0;
+       }
+   }
+
+   return 0;
+}

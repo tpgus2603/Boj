@@ -1,68 +1,68 @@
-//#include<iostream>
-//#include<cmath>
-//#include<vector>
-//#define ll long long
-//#define  K 1000000
+#include<iostream>
+#include<cmath>
+#include<vector>
+#define ll long long
+#define  K 1000000
+using namespace std;
+vector<ll>arr;
+ll powM(ll a, ll b, ll c) //a^b %c //È¦ï¿½ï¿½ Â¦ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½ 
+{
+	
+	if (b < 1)
+		return 1;
+	if (b > K)//bï¿½ï¿½ 100ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ±ï¿½ï¿½ ï¿½ï¿½ï¿½ 
+	{
+		return powM(a,K,c) * powM(a, b -K, c)% c;
+
+	}
+	else {
+		ll temp = b / 2;
+		if (b % 2 == 0)
+		{
+			if (b == K)  //ï¿½é¸¸ï¿½Î°ï¿½ï¿½ 
+			{
+				ll temp2 = powM(a, temp, c);
+				if (arr.empty())
+				{
+					arr.push_back((temp2 * temp2)%c);
+					return arr[0];
+				}
+				else
+					return arr[0];
+			}
+			else{
+				ll temp2 = powM(a, temp, c);
+				return (temp2 * temp2) %c;
+			}
+		}
+		else {
+			ll temp2 = powM(a, temp, c);
+			return (temp2 * temp2)%c*a%c;
+		}
+
+	}
+
+}
+
+int main()
+{
+	ll a, b, c;
+	cin >> a>>b>>c;
+	cout << powM(a, b, c);
+
+}
+
+
+
+//#include <bits/stdc++.h>
 //using namespace std;
-//vector<ll>arr;
-//ll powM(ll a, ll b, ll c) //a^b %c //È¦¼ö Â¦¼öµµ ³ª´²¾ßÇÒµí 
-//{
-//	
-//	if (b < 1)
-//		return 1;
-//	if (b > K)//b°¡ 100¸¸À» ³Ñ±â´Â °æ¿ì 
-//	{
-//		return powM(a,K,c) * powM(a, b -K, c)% c;
 //
-//	}
-//	else {
-//		ll temp = b / 2;
-//		if (b % 2 == 0)
-//		{
-//			if (b == K)  //¹é¸¸ÀÎ°æ¿ì 
-//			{
-//				ll temp2 = powM(a, temp, c);
-//				if (arr.empty())
-//				{
-//					arr.push_back((temp2 * temp2)%c);
-//					return arr[0];
-//				}
-//				else
-//					return arr[0];
-//			}
-//			else{
-//				ll temp2 = powM(a, temp, c);
-//				return (temp2 * temp2) %c;
-//			}
-//		}
-//		else {
-//			ll temp2 = powM(a, temp, c);
-//			return (temp2 * temp2)%c*a%c;
-//		}
+//using ll = long long;
 //
-//	}
-//
+//ll POW(ll a, ll b, ll m) {
+//	if (b == 1) return a % m; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
+//	ll val = POW(a, b / 2, m); 
+//	val = val * val % m;
+//	if (b % 2 == 0) return val; //Â¦ï¿½ï¿½ï¿½Î°ï¿½ï¿½ ï¿½×·ï¿½ï¿½ï¿½
+//	return val * a % m; //È¦ï¿½ï¿½ï¿½Î°ï¿½ï¿½ 
 //}
-//
-//int main()
-//{
-//	ll a, b, c;
-//	cin >> a>>b>>c;
-//	cout << powM(a, b, c);
-//
-//}
-//
-//
-//
-////#include <bits/stdc++.h>
-////using namespace std;
-////
-////using ll = long long;
-////
-////ll POW(ll a, ll b, ll m) {
-////	if (b == 1) return a % m; // Á¾·áÁ¶°Ç 
-////	ll val = POW(a, b / 2, m); 
-////	val = val * val % m;
-////	if (b % 2 == 0) return val; //Â¦¼öÀÎ°æ¿ì ±×·¡µµ
-////	return val * a % m; //È¦¼öÀÎ°æ¿ì 
-////}
