@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int dp[101][100001]={0}; 
+int dp[101][100001]={0}; //dp[i][j]= i번째 물건 까지 확인했을때 capacity가 j인 배낭의 최대가치
 int dpk[101];
 int main()
 {

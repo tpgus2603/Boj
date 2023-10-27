@@ -23,13 +23,13 @@ int main()
 		arr.push_back(temp);
 	}
 	sort(arr.begin(), arr.end());
-	for (int i = 1; i <= n; i++)
+	for (int i = 1; i <= n; i++) //n까지 물건 고려
 	{
-		for (int j = 1; j <= k; j++)
+		for (int j = 1; j <= k; j++) 
 		{ 
-			if (j >= arr[i].W) 
+			if (j >= arr[i].W) //물건 넣을 수 있는경우
 				dp[i][j] = max(dp[i - 1][j - arr[i].W] + arr[i].V, dp[i - 1][j]);
-			else
+			else //못넣으면 i-1개 물건 고려한거 유지 
 				dp[i][j] = dp[i - 1][j];
 		}
 	}

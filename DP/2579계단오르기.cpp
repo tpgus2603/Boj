@@ -16,8 +16,8 @@ int main()
 		cin >> temp;
 		stair.push_back(temp);
 	}
-	int dp[301][3];  //
-	dp[1][1] = stair[1]; dp[1][2] = 0;
+	int dp[301][3];  //dp[i][1]=i번째 계단을 밟는데 1계단째 밟은경우 dp[i][2]= 2계단째 밟는경우
+	dp[1][1] = stair[1]; dp[1][2] = 0; //dp[i][1]은 2번째 전 계단에서 한칸 점프한것임 
 	dp[2][1] = stair[2];
 	dp[2][2] = stair[1] + stair[2];
 	for (int i = 3; i <= n; i++)
