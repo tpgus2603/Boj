@@ -1,0 +1,1 @@
+{"name":"Local: ex","url":"c:\\Users\\hyun\\.vscode\\Boj\\Bojsilver2\\ex.cpp","tests":[{"id":1698856119937,"input":"7\nA B C\nB D .\nC E F\nE . .\nF . G\nD . .\nG . .","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hyun\\.vscode\\Boj\\Bojsilver2\\ex.cpp","group":"local","local":true}

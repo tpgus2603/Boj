@@ -11,7 +11,7 @@ using namespace std;
 vector<int> parent(10001);
 vector<int> ranks(10001, 1);
 int v, e;
-tuple<int, int, int> edge[100001];
+tuple<int, int, int> edge[100001];//거리,정점1,정점2
 vector<pair<int, int>> adj[100001]; // 간선에 대한 adj 거리,정점번호
 
 int find(int u)
@@ -56,9 +56,44 @@ int kruscal()
   return mtotal;
 }
 
+
+
+int kruscal2()
+{
+  int mst=0;
+  int mstn=0;
+  sort(edge,edge+e);
+  for(int i=0;i<v;i++)
+    parent[i]=i;
+  int dst,u,v;
+  for(int i=0;i<e;i++)
+  {
+    tie(dst,u,v)=edge[i];
+    if(find(u)==find(v))continue;
+    merge(u,v);
+    mst+=dst;
+    mstn+=1;
+    if(mstn==v-1)
+      break;
+  }
+  return mst;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 int prim()
 {
-  bool closed[100001];
+  bool closed[100001]; //mst에 포함된 정점인지 아닌지 
   int cnt = 0; // 선택된 간선 수
   // 거리,정점1,정점2(간선 거리와 연결된 정점 두개까지 포함한 정보 ) 오름차순
   priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>, greater<tuple<int, int, int>>> pq;

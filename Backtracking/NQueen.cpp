@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 bool isused1[30]; // 열 을 차지하고 있는지 확인
-bool isused2[30]; // 우측 방향 대각선을 차지하고 있는지
-bool isused3[30]; // 좌측  방향 대각선을 차지하고 있는지
+bool isused2[30]; // 좌측 방향 대각선을 차지하고 있는지
+bool isused3[30]; // 우측  방향 대각선을 차지하고 있는지
 
 int cnt = 0;
 int n;

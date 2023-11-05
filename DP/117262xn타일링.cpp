@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-	int dp[1001];
+	int dp[1001];//dp[n] 2xn크기 타일을 채우는 방법의 수 
 	dp[1] = 1;
 	dp[2] = 2;
 	int n;
