@@ -100,8 +100,8 @@ int main(void) {
         for (int dir = 0; dir < 4; dir++) {
             int nx = cur.X + dx[dir];
             int ny = cur.Y + dy[dir];
-            if (nx < 0 || nx >= n || ny < 0 || ny >= m) continue;
-            if (dist[nx][ny] >= 0) continue;
+            if (nx < 0 || nx >= n || ny < 0 || ny >= m) continue;//범위 벗어나면 
+            if (dist[nx][ny] >= 0) continue;//-1(방문 안한 익지않은놈)에 대해서만 
             dist[nx][ny] = dist[cur.X][cur.Y] + 1;
             Q.push({ nx,ny });
         }
