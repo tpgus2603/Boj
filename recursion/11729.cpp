@@ -32,6 +32,18 @@ void hanoi(int n, int from, int by, int to) {// 1 2 3
 	hanoi(n - 1, by, from, to);
 
 }
+void hanoi2(int n,int a,int b)
+{
+
+	if(n==1)
+	{
+		cout<<a<<' '<<b<<'\n';
+		return ;
+	}
+	hanoi2(n-1,a,6-(a+b));
+	cout<<a<<' '<<b<<'\n';
+	hanoi2(n-1,6-(a+b),b);
+}
 
 
 int main()
