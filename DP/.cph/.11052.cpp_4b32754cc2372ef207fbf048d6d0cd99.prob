@@ -1,0 +1,1 @@
+{"name":"Local: 11052","url":"c:\\Users\\hyun\\.vscode\\Boj\\DP\\11052.cpp","tests":[{"id":1706518607743,"input":"6\n\n1 5 6 1 1 1","output":"15"},{"id":1706518617913,"input":"12\n1 1 6 8 11 1 1 1 1 1 1 1","output":"25"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hyun\\.vscode\\Boj\\DP\\11052.cpp","group":"local","local":true}
