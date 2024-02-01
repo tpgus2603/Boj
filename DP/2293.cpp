@@ -30,25 +30,6 @@ ios::sync_with_stdio(0);cin.tie(0);
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // int dp[101][10001];
 
 // int main()

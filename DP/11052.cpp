@@ -36,7 +36,7 @@ int main()
 
 
 
-
+//그리디 사용 불가 ... 
 
 // bool cmp(pair<double,int> a ,pair<double,int> b)
 // {

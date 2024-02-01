@@ -21,7 +21,7 @@ ios::sync_with_stdio(0);cin.tie(0);
       vip[temp]=1;
    }
    dp[1][1]=1;
-   if(!vip[2])
+   if(!vip[1]&&!vip[2])
     dp[2][0]=1;
    dp[2][1]=1;
 
