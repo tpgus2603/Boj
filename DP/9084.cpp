@@ -4,11 +4,12 @@
 
 using namespace std;
 
+int arr[101][101];
 int main()
 {
-  int testn;
-  cin>>testn;
-  while(testn--)
+  int t;
+  cin>>t;
+  while(t--)
   {
     int n,m;
     cin>>n;
