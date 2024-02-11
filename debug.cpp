@@ -4,12 +4,7 @@ using namespace std;
 
 int main()
 {  
-  bool arr[10];
-  for(int i=0;i<10;i++)
-  {
-    if(arr[i])
-      cout<<"true ";
-  }
-
+  int upcnt1=0,upcnt2=0;
+  cout<<upcnt1<<upcnt2;
 }
 

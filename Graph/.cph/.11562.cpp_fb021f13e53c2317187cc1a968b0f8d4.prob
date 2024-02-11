@@ -1,0 +1,1 @@
+{"name":"Local: 11562","url":"c:\\Users\\hyun\\.vscode\\Boj\\Graph\\11562.cpp","tests":[{"id":1707644468175,"input":"4 3\n1 2 0\n2 3 1\n3 4 0\n7\n1 1\n1 2\n2 1\n1 4\n4 1\n2 3\n4 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hyun\\.vscode\\Boj\\Graph\\11562.cpp","group":"local","local":true}
