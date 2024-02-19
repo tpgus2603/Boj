@@ -44,7 +44,7 @@ int main()
   for(int i=1;i<=n;i++)
     parent[i]=i;
   ll mtotal=0;
-  ll mcnt=0;
+  int mcnt=0;
   int e=edge.size();
   int u,v;
   for(int i=0;i<e;i++)

@@ -1,13 +1,13 @@
 #include<iostream>
 
 using namespace std;
+
 int main()
 {
-  int a,b;
+  double a,b;
   cin>>a>>b;
-  cout<<a+b;
+  printf("%.11f",a/b);
+
+
 }
-
-
-
 

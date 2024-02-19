@@ -60,7 +60,7 @@ int main()
 }
 
 
-
+//Ç®ÀÌ 2
 // using namespace std;
 // int n, k;
 // int a[10005], d[10005];
