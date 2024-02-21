@@ -4,18 +4,14 @@
 #include<utility>
 #include<vector>
 using namespace std;
-
-
+int k;
 int main()
 {
-  int n,m;
-  cin>>n>>m;
-    int arr[n][m]={};
-  for(int i=0;i<n;i++)
-  {
-    for(int j=0;j<m;j++)
-      cout<<arr[i][j]<<' ';
-    cout<<'\n';
-  }
+  k=5;
+  cout<<k<<'\n';
+  k=3;
+  cout<<k<<'\n';
+  k=8;
+  cout<<k<<'\n';
 
 }
