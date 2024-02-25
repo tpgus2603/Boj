@@ -48,10 +48,9 @@ int main()
     int num;
     cin>>num;
     int temp;
-    num--;
     cin>>temp;
     party[i].push_back(temp);
-    while(num--)
+    while(--num)
     {
       int t;
       cin>>t;
@@ -72,3 +71,16 @@ int main()
 
 
 }
+//연결리스트 만드는 방법 
+//     int prv, nxt;
+//     cin >> prv;
+//     pt[i].push_back(prv);
+
+//     while(--no) {
+//       cin >> nxt;
+//       pt[i].push_back(nxt);
+//       adj[nxt].push_back(prv);
+//       adj[prv].push_back(nxt); // 동일한 파티에 참석한 앞뒤 사람끼리 간선이 연결되어있다고 생각
+//       swap(prv, nxt);
+//     }
+//   }

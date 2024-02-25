@@ -44,6 +44,8 @@ int main()
         {
           int from, to, cost;
           tie(from, to, cost) = edge[j];
+          if (d[from] == MAX)
+            continue;
           if (d[to] > d[from] + cost)
           {
             d[to] = d[from] + cost;
