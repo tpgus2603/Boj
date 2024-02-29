@@ -1,10 +1,15 @@
-#include<bits/stdc++.h>
+#include<iostream>
 
 using namespace std;
 
 int main()
-{  
-  int upcnt1=0,upcnt2=0;
-  cout<<upcnt1<<upcnt2;
+{
+  int n;
+  cin>>n;
+  for(int i=0;i<n;i++)
+  {
+    for(int j=0;j<=i;j++)
+      cout<<'*';
+    cout<<'\n';
+  }
 }
-
