@@ -60,7 +60,7 @@ int main()
 }
 
 
-//풀이 2
+// 풀이 2
 // using namespace std;
 // int n, k;
 // int a[10005], d[10005];

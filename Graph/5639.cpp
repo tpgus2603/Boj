@@ -4,8 +4,6 @@ using namespace std;
 
 int lc[1000001];
 int rc[1000001];
-int p[1000001];
-
 void postorder(int root)
 {
   if(lc[root]!=0)postorder(lc[root]);
@@ -14,6 +12,7 @@ void postorder(int root)
 }
 int main()
 {
+  ios::sync_with_stdio(0);cin.tie(0);
   int root;
   cin>>root;
   int t;

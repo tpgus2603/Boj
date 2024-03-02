@@ -26,7 +26,7 @@ int main()
       ans=cur.T;
       break;
     }
-    for(int i=0;i<3;i++) //i=0,1 걷기 -1,+1, i=2,순간이동
+    for(int i=0;i<3;i++) //
     {
       int x=cur.X;
       int t=cur.T;

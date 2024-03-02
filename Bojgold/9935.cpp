@@ -6,6 +6,23 @@
 using namespace std;
 
 
+vector<string> split (const string &s ,const string deli )
+{
+  vector<string> tokens;
+  int start=0;
+  int end=s.find(deli);
+  while(end!=string::npos)
+  {
+    tokens.push_back(s.substr(start,end-start));
+    start=end+deli.length();
+    end=s.find(deli,start);
+  }
+  tokens.push_back(s.substr(start));
+  return tokens;
+
+}
+
+
 int main()
 {
   ios::sync_with_stdio(0);cin.tie(0);
