@@ -6,8 +6,7 @@
 #define X  1000000007
 using namespace std;
 
-//map<ll,ll> fibo;
-unordered_map<ll,ll>fibo;
+map<ll,ll> fibo;
 
 ll n;
 
