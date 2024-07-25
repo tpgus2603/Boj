@@ -1,0 +1,1 @@
+{"name":"Local: 6064","url":"c:\\Users\\hyun\\.vscode\\Boj\\Bojsilver2\\6064.cpp","tests":[{"id":1721639634242,"input":"4\n10 12 3 9\n10 12 7 2\n10 12 10 12\n13 11 5 6","output":""},{"id":1721640170204,"input":"","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hyun\\.vscode\\Boj\\Bojsilver2\\6064.cpp","group":"local","local":true}
