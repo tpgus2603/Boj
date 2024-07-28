@@ -51,7 +51,4 @@ int main()
  }
  cout<<maxn;
 
-
-
-
 }
