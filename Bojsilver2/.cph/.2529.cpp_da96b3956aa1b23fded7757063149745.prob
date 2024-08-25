@@ -1,0 +1,1 @@
+{"name":"Local: 2529","url":"c:\\Users\\hyun\\.vscode\\Boj\\Bojsilver2\\2529.cpp","tests":[{"id":1724314047043,"input":"2\n< >","output":""},{"id":1724314051050,"input":"9\n> < < < > > > < <","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hyun\\.vscode\\Boj\\Bojsilver2\\2529.cpp","group":"local","local":true}

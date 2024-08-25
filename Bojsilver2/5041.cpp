@@ -29,8 +29,8 @@ int main()
         dx=cur+u;
       else
         dx=cur-d;
-      if(dx<0||dx>f)continue;
-      if(dis[dx]>=0)continue;
+      if(dx<=0||dx>f)continue;
+      if(dis[dx]!=-1)continue;
       dis[dx]=dis[cur]+1;
       q.push(dx);
     }

@@ -6,6 +6,14 @@ int n;
 int lc[30];
 int rc[30];
 
+vector<string> split( )
+
+
+
+
+
+
+
 void preorder(int cur){
   cout << char(cur+'A');
   if(lc[cur] != 0) preorder(lc[cur]);
