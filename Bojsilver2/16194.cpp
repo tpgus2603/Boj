@@ -27,8 +27,4 @@ int main()
     dp[i]=minn;
   }
   cout<<dp[n];
-
-
-
-
 }
