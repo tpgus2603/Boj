@@ -80,6 +80,7 @@ int main()
   if(arr[1][0]=='1')sum+=2;
   if(arr[2][0]=='1')sum+=4;
   if(arr[3][0]=='1')sum+=8;
+  
   cout<<sum;
   
 }

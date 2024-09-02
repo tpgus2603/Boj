@@ -5,6 +5,9 @@
     "vector": "cpp",
     "xstring": "cpp",
     "queue": "cpp",
-    "set": "cpp"
+    "set": "cpp",
+    "utility": "cpp",
+    "xutility": "cpp",
+    "algorithm": "cpp"
   }
 }
