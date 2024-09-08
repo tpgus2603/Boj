@@ -20,7 +20,7 @@ int main()
       temp.push_back(arr[i][j]);
     }
     sort(temp.begin(),temp.end());
-    temp.erase(unique(temp.begin(),temp.end()),temp.end());//중복제거 
+    //temp.erase(unique(temp.begin(),temp.end()),temp.end());//중복제거 
     for(int j=0;j<n;j++)
       arr[i][j]=lower_bound(temp.begin(),temp.end(),arr[i][j])-temp.begin();
   }
