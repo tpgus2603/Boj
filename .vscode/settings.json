@@ -8,6 +8,7 @@
     "set": "cpp",
     "utility": "cpp",
     "xutility": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "ios": "cpp"
   }
 }
