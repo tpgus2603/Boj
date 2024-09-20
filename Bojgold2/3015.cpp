@@ -23,7 +23,7 @@ int main()
   for(int i=0;i<n;i++)
   {
     int cnt=1;
-    while(!s.empty()&&s.top().X<=arr[i]) //순감소 모노톤스택
+    while(!s.empty()&&s.top().X<=arr[i]) //단조 감소 모노톤스택
     {
       auto cur=s.top();
       ans+=cur.Y;
