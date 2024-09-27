@@ -47,6 +47,8 @@ int main()
       }
     }
   }
+
+  
   sort(ans.begin(),ans.end());
   cout<<ans.size()<<'\n';
   for(auto cur:ans )

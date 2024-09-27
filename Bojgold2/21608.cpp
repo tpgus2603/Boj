@@ -11,13 +11,13 @@ using namespace std;
 int dx[4]={-1,1,0,0};
 int dy[4]={0,0,-1,1};
 int arr[21][21]; //확정된 자리
-bool cmp(pair<int,int> a,pair<int,int> b)
-{
-  if(a.X==b.X)
-    return a.Y<b.Y;
-  else
-    return a.X<b.X;
-}
+// bool cmp(pair<int,int> a,pair<int,int> b)
+// {
+//   if(a.X==b.X)
+//     return a.Y<b.Y;
+//   else
+//     return a.X<b.X;
+// }
 int main()
 {
   ios::sync_with_stdio(0);cin.tie(0);
@@ -114,7 +114,7 @@ int main()
       }
       else
       {
-        sort(near.begin(),near.end(),cmp);
+        sort(near.begin(),near.end());
         arr[near[0].X][near[0].Y]=cur;
       }
     }
