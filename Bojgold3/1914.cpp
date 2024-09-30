@@ -22,12 +22,15 @@ int main()
 {
   ios::sync_with_stdio(0);cin.tie(0);
   cin >> n;
-  // string ans=to_string(pow(2,n));
-  // ans=ans.substr(0,ans.find('.'));
-  // ans[ans.length()-1]-=1; //2의배수여서 가능... 1의자리가 0인ㅂ
-  // cout<<ans<<'\n';
-  // cout<<to_string(pow(2,100)-1000000)<<'\n';
-  cout<<pow(2,100)<<'\n';
+  string ans=to_string(pow(2,n));
+  ans=ans.substr(0,ans.find('.'));
+  ans[ans.length()-1]-=1; //2의배수여서 가능... 1의자리가 0인ㅂ
+  cout<<ans<<'\n';
+  cout<<to_string(pow(2,100)-1000000)<<'\n';
+  
+  
+
+
   if(n<=20)
     hanoi(n,1,2,3);
 }
