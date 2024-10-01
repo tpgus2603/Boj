@@ -62,12 +62,5 @@ int main()
     }
   }
   cout<<arr[X][Y];
-  
-
-  
-
-  
-
-
 
 }
