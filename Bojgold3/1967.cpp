@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
 #include<vector>
-
+#include<string>
 using namespace std;
 vector<int> adj[201];
 bool vis[201];
@@ -56,6 +56,6 @@ int main()
     }
   }
   cout<<"YES";
-
+  cout<<string(5,'3');
 
 }

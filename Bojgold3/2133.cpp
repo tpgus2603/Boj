@@ -19,4 +19,5 @@ int main()
       dp[i]+=2*dp[j-4];
   }
   cout<<dp[n];
+  
 }
