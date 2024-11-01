@@ -15,7 +15,6 @@ void func(int locate, ll idx,ll cur)
   {
     //cout<<locate<<' ';
     func(locate+1,i,cur+pow(10,locate)*i);
-    
   }
 }
 

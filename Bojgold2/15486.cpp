@@ -5,7 +5,7 @@
 using namespace std;
 #define T first 
 #define P second 
-int dp[1600000];
+int dp[1600000];//i번째일 마치고 최대 수익
 int main()
 {
   ios::sync_with_stdio(0);cin.tie(0);
