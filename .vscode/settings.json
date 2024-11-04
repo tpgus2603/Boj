@@ -9,6 +9,7 @@
     "utility": "cpp",
     "xutility": "cpp",
     "algorithm": "cpp",
-    "ios": "cpp"
+    "ios": "cpp",
+    "stdio.h": "c"
   }
 }

@@ -1,0 +1,1 @@
+{"name":"Local: 3079","url":"c:\\Users\\hyun\\.vscode\\Boj\\Bojgold4\\3079.cpp","tests":[{"id":1730735351123,"input":"2 6\n7\n10","output":""},{"id":1730735355266,"input":"7 10\n3\n8\n3\n6\n9\n2\n4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hyun\\.vscode\\Boj\\Bojgold4\\3079.cpp","group":"local","local":true}
