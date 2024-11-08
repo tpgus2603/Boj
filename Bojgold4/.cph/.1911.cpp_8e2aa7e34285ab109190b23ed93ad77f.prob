@@ -1,0 +1,1 @@
+{"name":"Local: 1911","url":"c:\\Users\\hyun\\.vscode\\Boj\\Bojgold4\\1911.cpp","tests":[{"id":1730999756735,"input":"3 3\n1 6\n13 17\n8 12","output":""},{"id":1730999774238,"input":"3 10\n1 5 \n6 8\n9 14","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hyun\\.vscode\\Boj\\Bojgold4\\1911.cpp","group":"local","local":true}
