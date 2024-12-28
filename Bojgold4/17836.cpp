@@ -55,7 +55,6 @@ int main()
       q.push({nx,ny,nb});
     }
   }
-  cout<<'\n';
   (tim[n-1][m-1]<=t&&tim[n-1][m-1]!=-1) ? cout<<tim[n-1][m-1]: cout<<"Fail";
 
 }

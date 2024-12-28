@@ -41,7 +41,4 @@ int main()
   }
    for(auto temp: result)
        cout<<temp<<' ';
-
-
-
 }

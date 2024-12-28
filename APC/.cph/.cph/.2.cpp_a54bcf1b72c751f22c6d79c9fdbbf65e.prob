@@ -1,0 +1,1 @@
+{"name":"Local: 2","url":"c:\\Users\\hyun\\.vscode\\APC\\.cph\\2.cpp","tests":[{"id":1735363094557,"input":"4\n2\n2 4 4 3 3 1 2 1\n3 12","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hyun\\.vscode\\APC\\.cph\\2.cpp","group":"local","local":true}
