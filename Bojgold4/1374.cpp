@@ -2,17 +2,16 @@
 using namespace std;
 #define X first  //시작시간
 #define Y second  //종료시간 
-
 int main()
 {
   ios::sync_with_stdio(0);cin.tie(0);
   int n;
   cin>>n;
   vector<pair<int,int>> room(n);
-  int t,s,e;
+  int s,e;
   for(int i=0;i<n;i++)
   {
-    cin>>t>>s>>e;
+    cin>>s>>e;
     room[i]={s,e};
   }
   sort(room.begin(),room.end());
