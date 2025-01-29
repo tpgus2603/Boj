@@ -38,8 +38,4 @@ int main()
       cout<<minn<<' '<<maxn<<'\n';
   }
 
-
-
-
-
 }
