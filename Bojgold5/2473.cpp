@@ -3,59 +3,59 @@
 #define X first  
 #define Y second 
 using namespace std;
-// int main()
-// {
-//   ios::sync_with_stdio(0);cin.tie(0);
-//   int n;
-//   cin>>n;
-//   vector<int> arr(n,0);
-//   for(int i=0;i<n;i++)
-//     cin>>arr[i];
-//   sort(arr.begin(),arr.end());
-//   vector<pair<short,short>> idx;
-//   ll ans=4e9;
-//   vector<int> ansarr(3,0);
-//   vector<int> sumarr;
-//   for(int i=0;i<n-1;i++)
-//   {
-//     for(int j=i+1;j<n;j++)
-//     {
-//       sumarr.push_back(arr[i]+arr[j]);
-//       idx.push_back({i,j});
-//     }
-//   }
+int main()
+{
+  ios::sync_with_stdio(0);cin.tie(0);
+  int n;
+  cin>>n;
+  vector<int> arr(n,0);
+  for(int i=0;i<n;i++)
+    cin>>arr[i];
+  sort(arr.begin(),arr.end());
+  vector<pair<short,short>> idx;
+  ll ans=4e9;
+  vector<int> ansarr(3,0);
+  vector<int> sumarr;
+  for(int i=0;i<n-1;i++)
+  {
+    for(int j=i+1;j<n;j++)
+    {
+      sumarr.push_back(arr[i]+arr[j]);
+      idx.push_back({i,j});
+    }
+  }
 
-//   int len=sumarr.size();
-//   for(int i=0;i<len;i++)
-//   {
-//     auto cur=sumarr[i];
-//     int x=arr[idx[i].X];
-//     int y=arr[idx[i].Y];
-//     auto temp=lower_bound(arr.begin(),arr.end(),-1*cur)-arr.begin();
-//     if(temp==n)temp--;
-//     if(temp+1<n&&abs((ll)cur+(ll)arr[temp+1])<abs(ans)&&arr[temp+1]!=x&&arr[temp+1]!=y)
-//     {
-//       ans=abs((ll)cur+(ll)arr[temp+1]);
-//       ansarr[0]=x;ansarr[1]=y;ansarr[2]=arr[temp+1];
-//     }
-//     if(abs((ll)cur+(ll)arr[temp])<abs(ans)&&arr[temp]!=x&&arr[temp]!=y)
-//     {
-//       ans=abs((ll)cur+(ll)arr[temp]);
-//       ansarr[0]=x;ansarr[1]=y;ansarr[2]=arr[temp];
-//     }
-//     temp--;
-//     if(temp<0)continue;
-//     if(abs((ll)cur+(ll)arr[temp])<abs(ans)&&arr[temp]!=x&&arr[temp]!=y)
-//     {
-//       ans=abs((ll)cur+(ll)arr[temp]);
-//       ansarr[0]=x;ansarr[1]=y;ansarr[2]=arr[temp];
-//     }
-//   }
-//   sort(ansarr.begin(),ansarr.end());
-//   for(auto t: ansarr)
-//     cout<<t<<' ';
+  int len=sumarr.size();
+  for(int i=0;i<len;i++)
+  {
+    auto cur=sumarr[i];
+    int x=arr[idx[i].X];
+    int y=arr[idx[i].Y];
+    auto temp=lower_bound(arr.begin(),arr.end(),-1*cur)-arr.begin();
+    if(temp==n)temp--;
+    if(temp+1<n&&abs((ll)cur+(ll)arr[temp+1])<abs(ans)&&arr[temp+1]!=x&&arr[temp+1]!=y)
+    {
+      ans=abs((ll)cur+(ll)arr[temp+1]);
+      ansarr[0]=x;ansarr[1]=y;ansarr[2]=arr[temp+1];
+    }
+    if(abs((ll)cur+(ll)arr[temp])<abs(ans)&&arr[temp]!=x&&arr[temp]!=y)
+    {
+      ans=abs((ll)cur+(ll)arr[temp]);
+      ansarr[0]=x;ansarr[1]=y;ansarr[2]=arr[temp];
+    }
+    temp--;
+    if(temp<0)continue;
+    if(abs((ll)cur+(ll)arr[temp])<abs(ans)&&arr[temp]!=x&&arr[temp]!=y)
+    {
+      ans=abs((ll)cur+(ll)arr[temp]);
+      ansarr[0]=x;ansarr[1]=y;ansarr[2]=arr[temp];
+    }
+  }
+  sort(ansarr.begin(),ansarr.end());
+  for(auto t: ansarr)
+    cout<<t<<' ';
   
-// }
+}
 
 
 int main(){
