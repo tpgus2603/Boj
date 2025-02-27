@@ -34,7 +34,7 @@ int bfs(pair<int,int> st,int k1,int k2,int k3,int k4,int num,int k)
       {
         if(nx+ny==k)continue;
       }
-      else
+      else //차차가 일정 
       {
         if(nx-ny==k)continue;
       }
@@ -57,18 +57,17 @@ int func(int x,int y,int d1,int d2)
  int temp=bfs({1,1},1,x+d1-1,1,y,0,x+y);
   maxn=max(temp,maxn);
   minn=min(temp,minn);
-  //cout<<"r1: "<<temp<<' ';
+
   //2영역 1
   temp=bfs({1,n},1,x+d2,y+1,n,1,x-y);
   maxn=max(temp,maxn);
   minn=min(temp,minn);
-  //cout<<"r2: "<<temp<<' ';
-  //3영역
+  //3영역 0
   temp=bfs({n,1},x+d1,n,1,y-d1+d2-1,1,x+d1-y+d1);
   maxn=max(temp,maxn);
   minn=min(temp,minn);
-  //cout<<"r3: "<<temp<<' ';
-  //4영역
+
+  //4영역 1
   temp=bfs({n,n},x+d2+1,n,y-d1+d2,n,0,x+d2+y+d2);
   maxn=max(temp,maxn);
   minn=min(temp,minn);
@@ -77,9 +76,6 @@ int func(int x,int y,int d1,int d2)
   temp=bfs({x,y},1,n,1,n,1,n);
   maxn=max(temp,maxn);
   minn=min(temp,minn);  
-  //cout<<"r4: "<<temp<<' ';
-  
-  //cout<<x<<' '<<y<<' '<<d1<<' '<<d2<<' '<<temp<<'\n';
   return maxn-minn;
 
 }

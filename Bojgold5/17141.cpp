@@ -76,5 +76,4 @@ int main()
   else cout<<ans;
 
 
-
 }

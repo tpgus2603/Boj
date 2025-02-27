@@ -106,6 +106,4 @@ int main()
   } while (next_permutation(mask.begin(),mask.end()));
   cout<<maxn;
 
-
-
 }

@@ -54,10 +54,7 @@ int main()
     while(!q.empty()&&!flag)
     {
       if(temp==cnt)
-      {
-        flag=true;
         break;
-      }
       auto cur=q.front();
       q.pop();
       for(int dir=0;dir<4;dir++)
