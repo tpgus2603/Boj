@@ -9,7 +9,7 @@ vector<string> split(const string &str , const string deli)
   int end=str.find(deli);
   while(end!=-1)
   {
-    // if(start!=end)
+     if(start!=end)
       tokens.push_back(str.substr(start,end-start));
     start=end+deli.length();
     end=str.find(deli,start);
