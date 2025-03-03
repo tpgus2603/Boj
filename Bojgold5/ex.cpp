@@ -34,6 +34,6 @@ int main()
   {
     cout<<temp<<' ';
   }
-
+  
 
 }

@@ -83,30 +83,16 @@ int main()
       arr=newarr;
       int b=arr.size();
       cnt+=(a-b);
-      // //한킨이동 
-      // vector<pair<int,int>> temparr;
-      // int len=arr.size();
-      // for(int i=0;i<len;i++)
-      // {
-      //   auto cur=arr[i];
-      //   if(cur.X+1>=n)continue;
-      //   else temparr.push_back({cur.X+1,cur.Y});
-      // }
-      // arr=temparr;
+      //한킨이동 
       vector<pair<int,int>> temparr;
       int len=arr.size();
       for(int i=0;i<len;i++)
       {
         auto cur=arr[i];
-        if(cur.X+1>=n)temparr.push_back(cur); //칸넘어가면 제거대상
-        else
-          arr[i].X++;
+        if(cur.X+1>=n)continue;
+        else temparr.push_back({cur.X+1,cur.Y});
       }
-      for(auto t:temparr) //제거대상 제거 
-      {
-        arr.erase(remove(arr.begin(),arr.end(),t),arr.end());
-      }
-
+      arr=temparr;
     }
     ans=max(ans,cnt);
   } while (next_permutation(mask.begin(), mask.end()));
@@ -115,16 +101,3 @@ int main()
 }
 
 
-// vector<pair<int,int>> move;
-//       int len=arr.size();
-//       for(int i=0;i<len;i++)
-//       {
-//         auto cur=arr[i];
-//         if(cur.X+1>=n)move.push_back(cur); //칸넘어가면 제거대상
-//         else
-//           arr[i].X++;
-//       }
-//       for(auto t:move) //제거대상 제거 
-//       {
-//         arr.erase(remove(arr.begin(),arr.end(),t),arr.end());
-//       }
