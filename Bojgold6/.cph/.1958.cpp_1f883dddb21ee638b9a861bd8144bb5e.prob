@@ -1,0 +1,1 @@
+{"name":"Local: 1958","url":"c:\\Users\\hyun\\.vscode\\Boj\\Bojgold6\\1958.cpp","tests":[{"id":1742221410879,"input":"abcdefghijklmn\nbdefg\nefg","output":""},{"id":1742221688834,"input":"bdeabc\nbdefg\nefgbd","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hyun\\.vscode\\Boj\\Bojgold6\\1958.cpp","group":"local","local":true}
