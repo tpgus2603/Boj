@@ -133,13 +133,9 @@ string multiplyBig(const string &A, const string &B) {
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    
-    string A, B;
-    cin>>A>>B;
-    
-    cout << addBig(A, B) << "\n";
-    cout << subtractBig(A, B) << "\n";
-    cout << multiplyBig(A, B) << "\n";
+    int cnt[101] ={};
+    for(int i=0;i<100;i++)
+        cout<<cnt[i]<<' ';
     
     return 0;
 }

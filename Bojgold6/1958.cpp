@@ -8,6 +8,8 @@ int main()
   string a, b, c;
   cin >> a >> b >> c;
   int alen = a.size(), blen = b.size(), clen = c.size();
+  // dp[i][j][k] = a[0~i-1], b[0~j-1], c[0~k-1] 까지의 LCS
+  //1-base index를 써서 에러막음 
   for(int i = 1; i <= alen; i++)
   {
     for(int j = 1; j <= blen; j++)
